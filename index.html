@@ -500,31 +500,17 @@
     /* ---------- CERTIFICATES ---------- */
     .certificate {
       font-size: 0.98rem;
-    }
-    .certificate img {
-      width: 100%;
-      max-height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: transform 0.5s;
-    }
-    .certificate:hover img { transform: scale(1.05); }
+      #certificates img {
+  width: 100%;
+  max-width: 500px;       /* Keeps the image inside the card */
+  display: block;
+  margin: 10px auto 30px; /* Adds spacing below */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: contain;    /* Prevents overflow distortion */
+}
 
-    .certificate h3 {
-      margin-top: 12px;
-      margin-bottom: 6px;
     }
-    .certificate p {
-      margin: 4px 0 10px;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-    .certificate-tags {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-
     /* ---------- CONTACT ---------- */
     form input,
     form textarea {
@@ -788,7 +774,7 @@
       <div class="certificate">Certificate 3 -  Mathworks / Machine Learning Onramp</div>
        <img src="certificate3.png">
       <div class="certificate">Certificate 4 -  Mathworks / Linear Algebra Onramp</div>
-       <img src="certificate4,png">
+       <img src="certificate4.png">
       <div class="certificate">Certificate 5 - Mathworks/ Signal Processing Onramp</div>
        <img src="certificate5.png">
     </section>
